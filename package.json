@@ -1,0 +1,30 @@
+{
+  "name": "vuejs-emojis",
+  "version": "1.0.0",
+  "description": "adds emoji support for vuejs projects",
+  "main": "dist/emoji.umd.js",
+  "module": "dist/emoji.esm.js",
+  "unpkg": "dist/emoji.min.js",
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/emoji.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/emoji.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/emoji.min.js"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "author": "Muhammad Saqib",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "rollup-plugin-json": "^4.0.0"
+  }
+}
