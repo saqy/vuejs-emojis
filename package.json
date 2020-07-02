@@ -26,5 +26,23 @@
   },
   "dependencies": {
     "rollup-plugin-json": "^4.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saqy/vuejs-emojis.git"
+  },
+ "keywords": [
+      "emoji",
+      "emojis",
+      "vue",
+      "vuejs",
+      "smile",
+      "small",
+      "simple",
+      "emoticons",
+      "emotions",
+      "icons",
+      "javascript",
+      "carona care"
+    ]
 }
